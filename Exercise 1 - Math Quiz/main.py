@@ -1,6 +1,6 @@
 import random
 
-def displayMenu():
+def displayMenu(): # Display difficulty selection menu
     print("\nDIFFICULTY LEVEL")
     print(" 1. Easy")
     print(" 2. Moderate")
@@ -15,7 +15,7 @@ def displayMenu():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-def randomInt(level):
+def randomInt(level): # Function to generate random number based on difficulty level
     if level == 1:
         return random.randint(1, 9)
     elif level == 2:
@@ -23,10 +23,10 @@ def randomInt(level):
     elif level == 3:
         return random.randint(1000, 9999)
     
-def decideOperation():
+def decideOperation(): # Randomly decide between addition and subtraction
     return random.choice(['+', '-'])
 
-def displayProblem(num1, num2, op):
+def displayProblem(num1, num2, op): # Display the math problem and get user answer
     question = f"{num1} {op} {num2} = "
     try:
         answer = int(input(question))
@@ -35,7 +35,7 @@ def displayProblem(num1, num2, op):
         print("Please enter a number...")
         return displayProblem(num1, num2, op)
 
-def isCorrect(user_answer, correct_answer, attempt):
+def isCorrect(user_answer, correct_answer, attempt): # Check if the user's answer is correct
     if user_answer == correct_answer:
         if attempt == 1:
             print("Correct! +10 points.")
@@ -50,7 +50,7 @@ def isCorrect(user_answer, correct_answer, attempt):
             print(f"Wrong again. The correct answer was {correct_answer}.")
         return 0
 
-def displayResults(score):
+def displayResults(score): # Display final score and rank
     print("\nFinal Score:", score, "/ 100")
     if score >= 90:
         rank = "A+"
@@ -67,7 +67,7 @@ def displayResults(score):
     print("Rank: ", rank)
     print("")
 
-def playQuiz():
+def playQuiz(): # Main quiz function
     level = displayMenu()
     score = 0
     for i in range(1, 11):
@@ -92,7 +92,7 @@ def playQuiz():
 
     displayResults(score)
 
-def main():
+def main(): # Main function loop to run the quiz
     while True:
         playQuiz()
         again = input("Do you want to play again? (y/n): ").lower()
