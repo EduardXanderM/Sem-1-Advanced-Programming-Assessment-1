@@ -1,0 +1,16 @@
+15
+8439,Jake Hobbs,10,11,10,43
+1123,Jo Huckleberry,9,14,16,55
+4390,Lily Summers,20,18,19,92
+5581,Max Dalton,12,15,14,65
+2987,Sara Khan,16,17,15,78
+6674,Omar Al Nahyan,13,16,15,72
+8801,Hana Lee,19,18,20,96
+7712,Felix Rivera,11,9,13,45
+9024,Ivy Santos,17,18,19,88
+2345,John Price,14,12,13,68
+5551,Maria Lopez,9,10,12,40
+7845,Yuki Tanaka,18,17,19,90
+4563,Alex Carter,10,11,9,37
+8765,Nina Patel,15,15,14,82
+6666,Xander Mariquita,20,30,50,90
